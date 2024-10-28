@@ -59,22 +59,3 @@ class BudgetCategory:
         print("Categories:\n")
         for category in cls.categories:
             print(f"Category: {category.get_category_name()}\nBudget: {category.get_category_budget()}\n")
-
-# =====================================================
-
-food_budget = BudgetCategory("Food", 100)
-entertainment_budget = BudgetCategory("Entertainment", 200)
-
-food_budget.add_expense('Pizza', 28.75)
-food_budget.add_expense('Sodas', 18.75)
-food_budget.add_expense('Beer', 30.45)
-
-entertainment_budget.add_expense('Movies', 15.00)
-entertainment_budget.add_expense('Concert', 45.00)
-
-food_budget.set_category_name('Groceries')
-food_budget.set_category_budget(200)
-
-food_budget.display_expenses()
-
-BudgetCategory.display_categories()
